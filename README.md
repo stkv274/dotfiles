@@ -1,4 +1,4 @@
-# My dotfiles
+# DOTFILES
 
 ## How to use this repo
 
