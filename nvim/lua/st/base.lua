@@ -42,8 +42,8 @@ for k, v in pairs(options) do
 end
 
 vim.cmd("autocmd FileType markdown setlocal wrap nocursorline")
-vim.cmd("autocmd FileType python setlocal ts=4 sts=4 sw=4")
-vim.cmd("autocmd FileType go setlocal ts=4 sts=4 sw=4 colorcolumn=80")
+vim.cmd("autocmd FileType python setlocal ts=4 sts=4 sw=4 colorcolumn=80")
+vim.cmd("autocmd FileType go setlocal ts=4 sts=4 sw=4")
 
 local function open_nvim_tree(data)
   -- buffer is a directory
