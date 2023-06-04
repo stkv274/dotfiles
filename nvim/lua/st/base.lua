@@ -23,8 +23,8 @@ local options = {
   updatetime = 300,                        -- faster completion (4000ms default)
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
   expandtab = true,                        -- convert tabs to spaces
-  shiftwidth = 4,                          -- the number of spaces inserted for each indentation
-  tabstop = 4,                             -- insert 2 spaces for a tab
+  shiftwidth = 2,                          -- the number of spaces inserted for each indentation
+  tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = false,                       -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                   -- set relative numbered lines
@@ -41,14 +41,9 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
-vim.cmd("autocmd FileType html setlocal ts=2 sts=2 sw=2")
-vim.cmd("autocmd FileType lua setlocal ts=2 sts=2 sw=2")
-vim.cmd("autocmd FileType javascript setlocal ts=2 sts=2 sw=2")
-vim.cmd("autocmd FileType typescript setlocal ts=2 sts=2 sw=2")
-vim.cmd("autocmd FileType json setlocal ts=2 sts=2 sw=2")
-vim.cmd("autocmd FileType python setlocal colorcolumn=80")
 vim.cmd("autocmd FileType markdown setlocal wrap nocursorline")
-vim.cmd("autocmd FileType cpp setlocal ts=2 sts=2 sw=2")
+vim.cmd("autocmd FileType python setlocal ts=4 sts=4 sw=4")
+vim.cmd("autocmd FileType go setlocal ts=4 sts=4 sw=4 colorcolumn=80")
 
 local function open_nvim_tree(data)
   -- buffer is a directory
