@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use "nyoom-engineering/oxocarbon.nvim"
   use "LunarVim/Colorschemes"
   use { "catppuccin/nvim", as = "catppuccin" }
+  use "overcache/NeoSolarized"
   use "xiyaowong/transparent.nvim" -- transparent background
 
   -- Markdown preview
