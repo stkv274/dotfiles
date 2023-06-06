@@ -4,4 +4,9 @@ if not status_ok then
   return
 end
 
-lualine.setup{}
+lualine.setup{
+  options = {
+    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+  }
+}
