@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use "overcache/NeoSolarized"
   use "xiyaowong/transparent.nvim" -- transparent background
+  use "lewpoly/sherbet.nvim"
 
   -- Markdown preview
   use({
